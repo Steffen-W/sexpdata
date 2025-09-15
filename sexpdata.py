@@ -706,7 +706,13 @@ class Parser(object):
     _atom_end_basic_or_escape_regexp: str
 
     def __init__(
-        self, string: str, string_to=None, nil: str = "nil", true: str = "t", false: Optional[str] = None, line_comment: str = ";"
+        self,
+        string: str,
+        string_to=None,
+        nil: str = "nil",
+        true: str = "t",
+        false: Optional[str] = None,
+        line_comment: str = ";",
     ) -> None:
         self.string = string
         self.nil = nil
